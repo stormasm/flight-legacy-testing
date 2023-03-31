@@ -29,3 +29,11 @@ You will note that the server fails on [t3.sh](./legacy/t3.sh)
 ```sh
 fleg "insert into person (id, name) values (1, 'Hopper'), (2, 'Kay')"
 ```
+
+### Building the Flight Sql Client
+
+To build the binary go to [arrow-flight](https://github.com/apache/arrow-rs/tree/master/arrow-flight) and issue the command
+
+```rust
+cargo build
+```
