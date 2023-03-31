@@ -37,3 +37,9 @@ To build the binary go to [arrow-flight](https://github.com/apache/arrow-rs/tree
 ```rust
 cargo build
 ```
+
+You will note that the server fails on [t3.sh](./sql/t3.sh)
+
+```sh
+flight_sql_client --host 0.0.0.0 --port 3033 --username admin --password password "insert into person (id, name) values (1, 'Hopper'), (2, 'Kay')"
+```
