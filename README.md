@@ -24,7 +24,7 @@ issuing all of these commands...
 ./t3.sh
 ```
 
-You will note that the server fails on this
+You will note that the server fails on [t3.sh](./legacy/t3.sh)
 
 ```sh
 fleg "insert into person (id, name) values (1, 'Hopper'), (2, 'Kay')"
