@@ -15,7 +15,7 @@ fleg stands for *flight legacy*
 
 Then bring up the schnapslatte server
 
-Then change directory to the legacy folder in this repo and start
+Then change directory to the *legacy* folder in this repo and start
 issuing all of these commands...
 
 ```sh
@@ -32,7 +32,7 @@ To build the binary go to [arrow-flight](https://github.com/apache/arrow-rs/tree
 cargo build --bin flight_sql_client --features="cli flight-sql-experimental tls"
 ```
 
-Then change directory to the sql folder in this repo and start
+Then change directory to the *sql* folder in this repo and start
 issuing all of these commands...
 
 ```sh
