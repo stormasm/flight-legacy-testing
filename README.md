@@ -31,3 +31,12 @@ To build the binary go to [arrow-flight](https://github.com/apache/arrow-rs/tree
 ```rust
 cargo build --bin flight_sql_client --features="cli flight-sql-experimental tls"
 ```
+
+Then change directory to the sql folder in this repo and start
+issuing all of these commands...
+
+```sh
+./t1.sh
+./t2.sh
+./t3.sh
+```
