@@ -24,22 +24,10 @@ issuing all of these commands...
 ./t3.sh
 ```
 
-You will note that the server fails on [t3.sh](./legacy/t3.sh)
-
-```sh
-fleg "insert into person (id, name) values (1, 'Hopper'), (2, 'Kay')"
-```
-
 ### Building the Flight Sql Client
 
 To build the binary go to [arrow-flight](https://github.com/apache/arrow-rs/tree/master/arrow-flight) and issue the command
 
 ```rust
-cargo build
-```
-
-You will note that the server fails on [t3.sh](./sql/t3.sh)
-
-```sh
-flight_sql_client --host 0.0.0.0 --port 3033 --username admin --password password "insert into person (id, name) values (1, 'Hopper'), (2, 'Kay')"
+cargo build --bin flight_sql_client --features="cli flight-sql-experimental tls"
 ```
