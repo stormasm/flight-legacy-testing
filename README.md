@@ -2,10 +2,7 @@
 
 ### Building the Flight Legacy Binary
 
-To build the binary go to
-[this branch](https://github.com/spaceandtimelabs/schnapslatte/tree/legacy_client)
-
-and issue the command
+To build the binary issue the command
 
 ```rust
 cargo build --bin fleg
