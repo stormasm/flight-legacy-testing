@@ -11,3 +11,6 @@ flight_sql_client --host 0.0.0.0 --port 50060 --username admin --password passwo
 
 flight_sql_client --host 0.0.0.0 --port 50060 --username admin --password password "create table part (p_partkey int, p_name varchar, p_mfgr varchar, p_brand varchar, p_type varchar, p_size int, p_container varchar, p_retailprice float, p_comment varchar, primary key (p_partkey));"
 flight_sql_client --host 0.0.0.0 --port 50060 --username admin --password password "insert into part values (1, 'part name 1', 'Manufacturer#1', 'Brand#13', 'type 1', 7, 'container JUMBO PKG', 901.00, 'comment');"
+
+flight_sql_client --host 0.0.0.0 --port 50060 --username admin --password password "create table supplier (s_suppkey int,s_name varchar,s_address varchar,s_nationkey int,s_phone varchar,s_acctbal float,s_comment varchar,primary key (s_suppkey));"
+flight_sql_client --host 0.0.0.0 --port 50060 --username admin --password password "insert into supplier values (1, 'Supplier#000000001', 'address N kD4on9OM Ipw3', 17, '27-918-335-1736', 5755.94, 'comment 1');"
