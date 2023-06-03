@@ -14,3 +14,6 @@ flight_sql_client --host 0.0.0.0 --port 50060 --username admin --password passwo
 
 flight_sql_client --host 0.0.0.0 --port 50060 --username admin --password password "create table supplier (s_suppkey int,s_name varchar,s_address varchar,s_nationkey int,s_phone varchar,s_acctbal float,s_comment varchar,primary key (s_suppkey));"
 flight_sql_client --host 0.0.0.0 --port 50060 --username admin --password password "insert into supplier values (1, 'Supplier#000000001', 'address N kD4on9OM Ipw3', 17, '27-918-335-1736', 5755.94, 'comment 1');"
+
+flight_sql_client --host 0.0.0.0 --port 50060 --username admin --password password "create table customer (c_custkey int,c_name varchar,c_address varchar,c_nationkey int,c_phone varchar,c_acctbal float,c_mktsegment varchar,c_comment varchar,primary key (c_custkey));"
+flight_sql_client --host 0.0.0.0 --port 50060 --username admin --password password "insert into customer values (1, 'Customer#000000001', 'address IVhzIApeRb ot,c,E', 15, '25-989-741-2988', 711.56, 'market segment 1', 'comment 1');"
