@@ -17,3 +17,8 @@ flight_sql_client --host 0.0.0.0 --port 50060 --username admin --password passwo
 
 flight_sql_client --host 0.0.0.0 --port 50060 --username admin --password password "create table customer (c_custkey int,c_name varchar,c_address varchar,c_nationkey int,c_phone varchar,c_acctbal float,c_mktsegment varchar,c_comment varchar,primary key (c_custkey));"
 flight_sql_client --host 0.0.0.0 --port 50060 --username admin --password password "insert into customer values (1, 'Customer#000000001', 'address IVhzIApeRb ot,c,E', 15, '25-989-741-2988', 711.56, 'market segment 1', 'comment 1');"
+
+flight_sql_client --host 0.0.0.0 --port 50060 --username admin --password password "create table orders (o_orderkey int,o_custkey int,o_orderstatus varchar,o_totalprice float,o_orderdate timestamp,o_orderpriority varchar,o_clerk varchar,o_shippriority int,o_comment varchar,primary key (o_orderkey));"
+flight_sql_client --host 0.0.0.0 --port 50060 --username admin --password password "insert into orders values (1, 36901, 'O', 173665.47, '1996-01-02', '5-LOW', 'Clerk#000000951', 0, 'comment 1');"
+
+flight_sql_client --host 0.0.0.0 --port 50060 --username admin --password password "create table lineitem (l_orderkey int,l_partkey int,l_suppkey int,l_linenumber int,l_quantity float,l_extendedprice float,l_discount float,l_tax float,l_returnflag varchar,l_linestatus varchar,l_shipdate timestamp,l_commitdate timestamp,l_receiptdate timestamp,l_shipinstruct varchar,l_shipmode varchar,l_comment varchar,primary key (l_orderkey, l_linenumber));"
